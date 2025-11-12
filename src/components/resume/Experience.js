@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import ResumeCard from "./ResumeCard";
 
 const Experience = () => {
@@ -11,17 +11,20 @@ const Experience = () => {
     >
       <div>
         <div className="flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
+          
           <h2 className="text-4xl font-bold">Job Experience</h2>
         </div>
-        <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-14 w-full h-[px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
+            title="Fullstack Developer"
+            subTitle="Wipro - (2022 - Present)"
+            result="Bangalore"
+            des={<div><ul >
+               <li>Developed and maintained highly responsive user interfaces leveraging ReactJS, Next.js, JavaScript, HTML, CSS, and Tailwind CSS to enhance application performance.</li>
+           <li> Optimized layout and design, achieving a 40% improvement in load times across all devices. </li>
+           <li>Built modular React components, reducing code redundancy by 40%, and collaborated with backend teams to ensure seamless API integrations and consistent data flow.</li></ul></div>}
           />
-          <ResumeCard
+          {/* <ResumeCard
             title="Web Developer & Trainer"
             subTitle="Apple Developer Team - (2012 - 2016)"
             result="MALAYSIA"
@@ -32,10 +35,10 @@ const Experience = () => {
             subTitle="Nike - (2020 - 2011)"
             result="Oman"
             des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
+          /> */}
         </div>
       </div>
-      <div>
+      {/* <div>
         <div className="flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2001 - 2020</p>
           <h2 className="text-4xl font-bold">Trainer Experience</h2>
@@ -59,8 +62,8 @@ const Experience = () => {
             result="NEVADA"
             des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
           />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </motion.div>
   );
 };

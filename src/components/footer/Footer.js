@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+// import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+// import {logo} from "../../assets/index"
 
 const Footer = () => {
   return (
-    <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
-      <div className="w-full h-full flex flex-col gap-8">
+    <div className="w-full py-20 h-auto border-b-[1px] ">
+      {/* <div className="w-full h-full flex flex-col gap-8">
         <img className="w-32" src={logo} alt="logo" />
         <div className="flex gap-4">
           <span className="bannerIcon">
@@ -129,7 +129,9 @@ const Footer = () => {
             </span>
           </li>
         </ul>
-      </div>
+      </div> */}
+      <h1 className='text-center text-5xl font-bold text-red-500'>Thank You for Visiting!!!</h1>
+      <p  className='text-center'>Looking forward to connect with you</p>
     </div>
   );
 }

@@ -10,8 +10,9 @@ const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
-        <img src={logo} alt="logo" />
+      <div className='gap-0.1 font-bold text-gray-300'>
+        <span className='text-6xl text-red-500'> C</span> <span className='text-3xl'>hinna</span>
+        <span className='text-6xl text-red-500'> K</span><span className='text-3xl'>adinti</span>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
