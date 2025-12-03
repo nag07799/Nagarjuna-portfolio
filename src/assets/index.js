@@ -8,7 +8,8 @@ import testimonialTwo from "./images/testmonial/testimonialTwo.png";
 import quote from "./images/testmonial/quote.png";
 import contactImg from "./images/contact/contactImg.png";
 import chinna_img from "./images/chinna_img.png";
-import Chinna from "./Chinna.pdf"
+import nagu_img from "./images/nagu.png";
+import nagResume from "./images/nag_resume_pdf.pdf";
 export {
   logo,
   bannerImg,
@@ -20,5 +21,6 @@ export {
   quote,
   contactImg,
   chinna_img,
-  Chinna
+  nagu_img,
+  nagResume,
 };

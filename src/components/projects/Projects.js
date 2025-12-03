@@ -13,7 +13,7 @@ const Projects = () => {
     >
       <div className="flex justify-center items-center text-center">
         <Title
-          title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
+          title="AI/ML PRODUCTION SYSTEMS"
           des="My Projects"
         />
       </div>
@@ -26,83 +26,49 @@ const Projects = () => {
           github={<a href='https://ytapi-clone-chinna.web.app' target='_blank'><BsGithub /></a>}
         /> */}
         <ProjectsCard
-          title="YOUTUBE CLONE"
-          des="A ReactJS-based YouTube clone that integrates with the YouTube API. Users 
-            can search for and watch videos, access channel information, and enjoy a 
-            responsive design for desktop and mobile."
+          title="Real-Time Fraud Detection System"
+          des="Built production-ready fraud detection models processing 30M+ daily transactions with 98% precision. Implemented ensemble models combining XGBoost and deep neural networks with PySpark feature engineering, deployed on AWS SageMaker with autoscaling and MLflow tracking."
           src={projectOne}
           github={
-            <a 
-              href='https://github.com/Chinna-Kadinti/youtube-clone.git' 
-              target='_blank' 
+            <a
+              href='https://github.com/nagu0799'
+              target='_blank'
               rel='noopener noreferrer'
               aria-label="GitHub repository"
             >
               {<FaGithub />}
             </a>
           }
-          globe={
-            <a 
-              href='https://ytapi-clone-chinna.web.app' 
-              target='_blank' 
-              rel='noopener noreferrer'
-              aria-label="Globe"
-            >
-              {<FaGlobe />}
-            </a>
-          }
-          
+
         />
         <ProjectsCard
-          title="NETFLIX CLONE"
-          des=" A React-based Netflix clone that uses CSS for styling and integrates with the TMDB API to display live
-           movie listings. Users can browse and view details of popular films in a responsive design."
+          title="Multi-Agent AI Banking Platform"
+          des="Designed and implemented multi-agent AI platform using LangChain and LangGraph to automate trading, risk management, compliance, and customer analytics. Integrated Model Context Protocol (MCP) for seamless agent access to financial APIs and regulatory databases."
           src={projectTwo}
-          
+
           github={
-            <a 
-              href='https://github.com/Chinna-Kadinti/netflix-clone-chinna.git' 
-              target='_blank' 
+            <a
+              href='https://github.com/nagu0799'
+              target='_blank'
               rel='noopener noreferrer'
               aria-label="GitHub repository"
             >
               {<FaGithub />}
             </a>
           }
-          globe={
-            <a 
-              href='https://netflix-clone-chinna.web.app/' 
-              target='_blank' 
-              rel='noopener noreferrer'
-              aria-label="Globe"
-            >
-              {<FaGlobe />}
-            </a>
-          }
         />
         <ProjectsCard
-          title="Personal porfolio"
-          des=" A personal portfolio showcasing my skills, projects, and experiences. It features information about me, my work, a
-          nd various functionalities to highlight my capabilities and accomplishments effectively."
+          title="Agentic RAG Chatbot System"
+          des="Built scalable Agentic RAG chatbot enabling 24/7 support for university students. Engineered agentic workflows with specialized sub-agents using Llama 3, Mistral, and vector databases (FAISS, Chroma) for semantic search and real-time student engagement."
           src={projectThree}
           github={
-            <a 
-              href='https://github.com/Chinna-Kadinti/chinna-kadinti.git' 
-              target='_blank' 
+            <a
+              href='https://github.com/nagu0799'
+              target='_blank'
               rel='noopener noreferrer'
               aria-label="GitHub repository"
             >
               {<FaGithub />}
-            </a>
-          }
-          globe={
-            <a 
-              href='https://chinna-kadinti.netlify.app/' 
-              target='_blank' 
-              rel='noopener noreferrer'
-              aria-label="Globe"
-            >
-              {<FaGlobe />}
             </a>
           }
         />

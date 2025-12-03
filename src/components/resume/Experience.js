@@ -16,13 +16,35 @@ const Experience = () => {
         </div>
         <div className="mt-14 w-full h-[px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Fullstack Developer"
-            subTitle="Wipro - (2022 - Present)"
-            result="Bangalore"
+            title="AI Engineer"
+            subTitle="Procal Technologies (Client: Wells Fargo) - (June 2025 - Present)"
+            result="Remote"
             des={<div><ul >
-               <li>Developed and maintained highly responsive user interfaces leveraging ReactJS, Next.js, JavaScript, HTML, CSS, and Tailwind CSS to enhance application performance.</li>
-           <li> Optimized layout and design, achieving a 40% improvement in load times across all devices. </li>
-           <li>Built modular React components, reducing code redundancy by 40%, and collaborated with backend teams to ensure seamless API integrations and consistent data flow.</li></ul></div>}
+               <li>Designed and implemented multi-agent AI platform using LangChain and LangGraph to automate trading, risk management, compliance, and customer analytics for large-scale banking operations.</li>
+           <li>Architected specialized agent workflows with Trading Agent, Risk Agent, Compliance Agent, and Customer Intelligence Agent modules for collaborative decision-making.</li>
+           <li>Integrated Model Context Protocol (MCP) for seamless agent access to financial APIs, regulatory databases, live market feeds, and AML screening systems.</li>
+           <li>Developed agent memory systems combining real-time context with persistent knowledge bases, ensuring continuity across 1,000+ user sessions.</li></ul></div>}
+          />
+          <ResumeCard
+            title="ML Engineer"
+            subTitle="Tata Consultancy Services (Client: Bank of America) - (Aug 2021 - Aug 2023)"
+            result="Remote"
+            des={<div><ul >
+               <li>Built real-time fraud detection models for 30M+ daily transactions, improving precision to 98% and reducing false positives by 35%.</li>
+           <li>Engineered streaming feature store with PySpark, delivering 200+ behavioral and merchant features with sub-second latency.</li>
+           <li>Deployed PyTorch and TensorFlow models on AWS SageMaker with autoscaling, maintaining 99.9% uptime across peak loads.</li>
+           <li>Implemented end-to-end ML CI/CD with GitHub Actions, Docker, Terraform, and Helm, reducing deployment cycles from days to under 3 hours.</li>
+           <li>Delivered SHAP-based explainability and transaction-level reason codes, meeting governance requirements for regulator and internal audit reviews.</li></ul></div>}
+          />
+          <ResumeCard
+            title="Research Assistant"
+            subTitle="University of North Texas - (Jan 2024 - May 2025)"
+            result="Denton, TX"
+            des={<div><ul >
+               <li>Designed and implemented Agentic RAG chatbot enabling 24/7 support for UNT students on library access, scholarships, campus services, and academic queries.</li>
+           <li>Engineered agentic workflows integrating specialized sub-agents (Library Info Agent, Scholarship Advisor, Campus Services Agent) for domain-specific reasoning and multi-turn dialogues.</li>
+           <li>Leveraged open-source LLMs (Llama 3, Mistral) and vector databases (FAISS, Chroma) for semantic search and rapid retrieval from diverse university data sources.</li>
+           <li>Built scalable, user-friendly web interface with contextual chat history, document uploads, and interactive Q&A tailored for real-time student engagement.</li></ul></div>}
           />
           {/* <ResumeCard
             title="Web Developer & Trainer"

@@ -3,6 +3,54 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-body: #212428;
+  --color-text: #c4cfde;
+  --color-accent: #ff014f;
+  --color-panel-start: #1e2024;
+  --color-panel-end: #23272b;
+  --color-card-end: #202327;
+  --shadow-one: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+:root[data-theme="dark"] {
+  --color-body: #212428;
+  --color-text: #c4cfde;
+  --color-accent: #ff014f;
+  --color-panel-start: #1e2024;
+  --color-panel-end: #23272b;
+  --color-card-end: #202327;
+  --shadow-one: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+:root[data-theme="light"] {
+  --color-body: #f7f8fc;
+  --color-text: #1f2933;
+  --color-accent: #2563eb;
+  --color-panel-start: #ffffff;
+  --color-panel-end: #dbeafe;
+  --color-card-end: #c7d2fe;
+  --shadow-one: 10px 10px 19px rgba(15, 23, 42, 0.12),
+    -10px -10px 19px rgba(255, 255, 255, 0.7);
+}
+
+:root[data-theme="sunset"] {
+  --color-body: #1f1b2e;
+  --color-text: #fef3c7;
+  --color-accent: #f97316;
+  --color-panel-start: #2a1f3c;
+  --color-panel-end: #3b1d28;
+  --color-card-end: #4a2f3f;
+  --shadow-one: 10px 10px 19px rgba(0, 0, 0, 0.55),
+    -10px -10px 19px rgba(255, 255, 255, 0.04);
+}
+
+body {
+  background-color: var(--color-body);
+  color: var(--color-text);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
 @layer components{
     .bannerIcon{
         @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;

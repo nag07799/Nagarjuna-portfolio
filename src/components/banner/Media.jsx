@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaReact, FaJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaPython, FaAws, FaDocker } from "react-icons/fa";
+import { SiPytorch, SiTensorflow, SiKubernetes } from "react-icons/si";
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -26,18 +26,24 @@ const Media = () => {
           </h2>
           <div className="flex gap-4">
           <span className="bannerIcon">
-              <FaJs />
+              <FaPython />
             </span>
             <span className="bannerIcon">
-              <FaReact />
+              <SiPytorch />
             </span>
             <span className="bannerIcon">
-              <SiNextdotjs />
+              <SiTensorflow />
             </span>
             <span className="bannerIcon">
-              <SiTailwindcss />
+              <FaAws />
             </span>
-          
+            <span className="bannerIcon">
+              <FaDocker />
+            </span>
+            <span className="bannerIcon">
+              <SiKubernetes />
+            </span>
+
           </div>
         </div>
       </div>

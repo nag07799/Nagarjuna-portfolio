@@ -46,16 +46,16 @@ const Contact = () =>{
 
       console.log("Sending email with:", { username, phoneNumber, email, subject, message });
       console.log("EmailJS Config:", {
-        serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_onnvynq',
-        templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_cep73de',
+        serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_4bpqndo',
+        templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_xdbxvva',
         publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'Y4F-WWiaTvNERBkTg'
       });
 
       // Send email after validation passes
       emailjs
         .sendForm(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_onnvynq',
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_cep73de',
+          process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_4bpqndo',
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_xdbxvva',
           form.current
         )
         .then(

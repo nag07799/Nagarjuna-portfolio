@@ -1,52 +1,42 @@
-// import { AiFillAppstore } from "react-icons/ai";
-// import { FaMobile, FaGlobe} from "react-icons/fa";
-// import { SiProgress, SiAntdesign } from "react-icons/si";
-import { FaLaptopCode, FaServer } from 'react-icons/fa'
-// import { RiMovie2Line } from 'react-icons/ri';
-import { MdDevices } from 'react-icons/md';
-import { BiLinkAlt } from 'react-icons/bi';
-// import { MdOutlineDesignServices } from 'react-icons/md';
-// import { FiZap } from 'react-icons/fi';
-// import { AiOutlineApi } from 'react-icons/ai';
-import { AiFillLock } from 'react-icons/ai';
-import { FiEdit } from 'react-icons/fi';
+import { FaBrain, FaRobot, FaServer, FaChartLine, FaShieldAlt } from 'react-icons/fa';
+import { SiKubernetes } from 'react-icons/si';
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
-    icon: <FaLaptopCode/>,
-    title: "Full Stack Development",
-    des: "Building end-to-end web applications with Next.js, combining front-end and back-end for seamless user experiences.",
+    icon: <FaBrain/>,
+    title: "Deep Learning & Neural Networks",
+    des: "Building state-of-the-art deep learning models with PyTorch and TensorFlow, specializing in CNNs, RNNs, and Transformers for computer vision and NLP applications.",
   },
   {
     id: 2,
-    icon: <FaServer />,
-    title: "Server-Side Rendering (SSR)",
-    des: "Enhancing performance and SEO with Next.js SSR, delivering fast, pre-rendered pages for optimized user engagement.",
+    icon: <FaRobot />,
+    title: "Multi-Agent AI Systems",
+    des: "Architecting intelligent agent systems using LangChain, LangGraph, and Model Context Protocol (MCP) for collaborative decision-making and autonomous workflows.",
   },
   {
     id: 3,
-    icon: <BiLinkAlt />,
-    title: "API Development & Integration",
-    des: "Developing and integrating RESTful and GraphQL APIs within Next.js, enabling smooth data flow and enhanced functionality.",
+    icon: <FaServer />,
+    title: "Production ML Infrastructure",
+    des: "Deploying scalable ML systems on AWS (SageMaker, Bedrock, Lambda) with Docker, Kubernetes, and comprehensive MLOps pipelines for enterprise-grade reliability.",
   },
   {
     id: 4,
-    icon: <FiEdit />,
-    title: "UI/UX Optimization",
-    des: "Crafting intuitive, responsive interfaces in Next.js that balance aesthetic appeal with high performance and usability.",
+    icon: <FaChartLine />,
+    title: "Real-Time ML Systems",
+    des: "Engineering high-throughput ML pipelines processing millions of events daily with PySpark, Kafka, and streaming architectures for instant predictions.",
   },
   {
     id: 5,
-    icon: <MdDevices />,
-    title: "Responsive & Adaptive Design",
-    des: "Ensuring flawless functionality across devices with Next.js, delivering a consistent user experience on all screen sizes.",
+    icon: <SiKubernetes />,
+    title: "MLOps & CI/CD Automation",
+    des: "Implementing end-to-end MLOps with MLflow, GitHub Actions, Terraform, and automated testing to accelerate model deployment from hours to minutes.",
   },
   {
     id: 6,
-    icon: <AiFillLock />,
-    title: "Authentication & Security",
-    des: "Implementing secure authentication with NextAuth.js, ensuring data protection and secure user sessions within Next.js applications.",
+    icon: <FaShieldAlt />,
+    title: "AI Governance & Explainability",
+    des: "Delivering interpretable AI with SHAP, model drift monitoring, and compliance-ready documentation for regulatory audits and stakeholder trust.",
   },
 ];
