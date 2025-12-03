@@ -17,50 +17,62 @@ const Contact = () =>{
   const form = useRef();
     const sendEmail = (e) => {
       e.preventDefault();
+
+      // Validate before sending
+      if (username === "") {
+        setErrMsg("Username is required!");
+        return;
+      } else if (phoneNumber === "") {
+        setErrMsg("Phone number is required!");
+        return;
+      } else if (email === "") {
+        setErrMsg("Please give your Email!");
+        return;
+      } else if (!emailValidation(email)) {
+        setErrMsg("Give a valid Email!");
+        return;
+      } else if (subject === "") {
+        setErrMsg("Plese give your Subject!");
+        return;
+      } else if (message === "") {
+        setErrMsg("Message is required!");
+        return;
+      }
+
       console.log("Sending email with:", { username, phoneNumber, email, subject, message });
+      console.log("EmailJS Config:", {
+        serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      });
+
+      // Send email after validation passes
       emailjs
         .sendForm(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_onnvynq',
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_cep73de',
           form.current,
           {
-            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'Y4F-WWiaTvNERBkTg',
           }
         )
         .then(
-          () =>{
-            if (username === "") {
-              setErrMsg("Username is required!");
-            } else if (phoneNumber === "") {
-              setErrMsg("Phone number is required!");
-            } else if (email === "") {
-              setErrMsg("Please give your Email!");
-            } else if (!emailValidation(email)) {
-              setErrMsg("Give a valid Email!");
-            } else if (subject === "") {
-              setErrMsg("Plese give your Subject!");
-            } else if (message === "") {
-              setErrMsg("Message is required!");
-            } else {
-              setSuccessMsg(
-                `Thank you dear ${username}, Your Messages has been sent Successfully!`
-              );
-              setErrMsg("");
-              setUsername("");
-              setPhoneNumber("");
-              setEmail("");
-              setSubject("");
-              setMessage("");
-              
-            }
-          } 
-          // {
-          //   console.log('SUCCESS!');
-          // },
-          // (error) => {
-          //   console.log('FAILED...', error.text);
-          // },
-          
+          () => {
+            console.log('SUCCESS!');
+            setSuccessMsg(
+              `Thank you dear ${username}, Your Messages has been sent Successfully!`
+            );
+            setErrMsg("");
+            setUsername("");
+            setPhoneNumber("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            setErrMsg("Failed to send message. Please try again.");
+          }
         );
 
       }
@@ -70,8 +82,8 @@ const Contact = () =>{
   // ========== Email Validation start here ==============
   const emailValidation = () => {
     return String(email)
-      .toLocaleLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+      .toLowerCase()
+      .match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
   };
   // ========== Email Validation end here ================
 
@@ -204,7 +216,7 @@ const Contact = () =>{
               </div>
               <div className="w-full">
                 <button
-                  onClick={sendEmail}
+                  type="submit"
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
                   Send Message
