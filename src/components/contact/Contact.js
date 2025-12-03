@@ -1,10 +1,10 @@
-import React,{useState,useRef} from 'react'
+import React,{useState,useRef,useEffect} from 'react'
 import emailjs from '@emailjs/browser';
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
 
 
-const Contact = () =>{ 
+const Contact = () =>{
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -12,6 +12,11 @@ const Contact = () =>{
   const [message, setMessage] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'Y4F-WWiaTvNERBkTg');
+  }, []);
 
   // ===== Configured with EmailJS ====
   const form = useRef();
@@ -41,9 +46,9 @@ const Contact = () =>{
 
       console.log("Sending email with:", { username, phoneNumber, email, subject, message });
       console.log("EmailJS Config:", {
-        serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_onnvynq',
+        templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_cep73de',
+        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'Y4F-WWiaTvNERBkTg'
       });
 
       // Send email after validation passes
@@ -51,10 +56,7 @@ const Contact = () =>{
         .sendForm(
           process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_onnvynq',
           process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_cep73de',
-          form.current,
-          {
-            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'Y4F-WWiaTvNERBkTg',
-          }
+          form.current
         )
         .then(
           () => {
