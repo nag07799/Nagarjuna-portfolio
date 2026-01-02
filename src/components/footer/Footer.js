@@ -130,8 +130,8 @@ const Footer = () => {
           </li>
         </ul>
       </div> */}
-      <h1 className='text-center text-5xl font-bold text-red-500'>Thank You for Visiting!!!</h1>
-      <p  className='text-center'>Looking forward to connect with you</p>
+      <h1 className='text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-red-500'>Thank You for Visiting!!!</h1>
+      <p  className='text-center text-sm sm:text-base'>Looking forward to connect with you</p>
     </div>
   );
 }

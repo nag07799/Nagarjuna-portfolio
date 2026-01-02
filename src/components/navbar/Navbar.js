@@ -12,8 +12,8 @@ const Navbar = ({ onChatbotToggle }) => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div className='gap-0.1 font-bold text-gray-300'>
-        <span className='text-6xl text-red-500'> N</span> <span className='text-3xl'>agarjuna</span>
-        <span className='text-6xl text-red-500'> P</span><span className='text-3xl'>endekanti</span>
+        <span className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-red-500'> N</span> <span className='text-base sm:text-xl md:text-2xl lg:text-3xl'>agarjuna</span>
+        <span className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-red-500'> P</span><span className='text-base sm:text-xl md:text-2xl lg:text-3xl'>endekanti</span>
       </div>
       <div className="flex items-center gap-4">
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">

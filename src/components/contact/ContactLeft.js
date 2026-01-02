@@ -11,7 +11,7 @@ const ContactLeft = () => {
   return (
     <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[var(--color-panel-start)] to-[var(--color-panel-end)] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
       <img
-        className="w-full h-64 object-cover rounded-lg mb-2"
+        className="w-full h-48 sm:h-56 md:h-60 lg:h-64 object-cover rounded-lg mb-2"
         src={contactImg}
         alt="contactImg"
       />

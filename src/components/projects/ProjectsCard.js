@@ -4,10 +4,10 @@ import React from 'react'
 
 const ProjectsCard = ({ title, des, src, github, globe }) => {
   return (
-    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[var(--color-card-end)] group hover:bg-gradient-to-b hover:from-gray-900 hover:to-[var(--color-panel-start)] transition-colors duration-1000">
+    <div className="w-full p-4 sm:p-6 md:p-8 lg:px-10 lg:py-8 xl:px-12 xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[var(--color-card-end)] group hover:bg-gradient-to-b hover:from-gray-900 hover:to-[var(--color-panel-start)] transition-colors duration-1000">
       <div className="w-full h-[80%] overflow-hidden rounded-lg">
         <img
-          className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
+          className="w-full h-48 sm:h-52 md:h-56 lg:h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
           src={src}
           alt="src"
         />
