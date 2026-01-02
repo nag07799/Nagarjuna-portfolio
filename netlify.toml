@@ -9,6 +9,8 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
+  # Exclude client-side env vars from secrets scanning (these are bundled into JS and meant to be public)
+  SECRETS_SCAN_OMIT_KEYS = "REACT_APP_EMAILJS_PUBLIC_KEY,REACT_APP_EMAILJS_SERVICE_ID,REACT_APP_EMAILJS_TEMPLATE_ID,REACT_APP_GROQ_API_KEY,REACT_APP_EMAILJS_PRIVATE_KEY"
 
 # Redirect rules (backup to _redirects file)
 [[redirects]]
