@@ -21,7 +21,7 @@ const Projects = () => {
         <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
           <ProjectsCard
             title="Agentic RAG Chatbot System"
-            des="Built scalable Agentic RAG chatbot enabling 24/7 support for university students. Engineered agentic workflows with specialized sub-agents using Llama 3, Mistral, and vector databases (FAISS, Chroma) for semantic search and real-time student engagement."
+            des="Production-ready Retrieval-Augmented Generation system with agentic reasoning powered by Ollama and Mistral. Features local-first architecture, custom NumPy vector database, hybrid search (semantic + BM25), ReAct reasoning pattern, and hallucination prevention with zero API costs."
             src={projectThree}
             github={
               <a
