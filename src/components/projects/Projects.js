@@ -3,7 +3,7 @@ import Title from '../layouts/Title'
 import { projectOne, projectTwo, projectThree } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 // import { BsGithub } from 'react-icons/bs';
-import { FaGithub, FaGlobe } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   return (
