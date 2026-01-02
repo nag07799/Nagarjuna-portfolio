@@ -1,0 +1,17 @@
+[build]
+  # Directory to build
+  publish = "build"
+
+  # Build command
+  command = "npm run build"
+
+# Production environment variables
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+# Redirect rules (backup to _redirects file)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
