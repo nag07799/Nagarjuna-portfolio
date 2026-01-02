@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectThree } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 // import { BsGithub } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
